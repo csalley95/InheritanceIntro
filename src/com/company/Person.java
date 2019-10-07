@@ -20,7 +20,7 @@ public class Person {
     }
 
     public String recover(int recoveryTime) {
-        for (int i = 1; i <= recoveryTime; i = i++) {
+        for (int i = 1; i <= recoveryTime; i++) {
             System.out.println("Ouch " + name + " is recovering.");
         }
         return name+ " has recovered.";
