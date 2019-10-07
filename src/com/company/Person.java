@@ -7,6 +7,10 @@ public class Person {
         this.name = givenName;
     }
 
+    public void payBill(double bill){
+        System.out.println("I just payed my "+ bill +" bill \n"+ name);
+    }
+
     public void takeMedicine(){
         System.out.println(name + " is taking medicine now.");
     }
@@ -19,5 +23,6 @@ public class Person {
         for (int i = 1; i <= recoveryTime; i = i++) {
             System.out.println("Ouch " + name + " is recovering.");
         }
+        return name+ " has recovered.";
     }
 }

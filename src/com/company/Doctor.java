@@ -15,9 +15,18 @@ public class Doctor {
     }
 
     public void treatPatient(Person patient){
-        System.out.println("Take two every three hours.");
+        System.out.println("Take two every twelve hours");
+        patient.takeMedicine();
     }
 
-    public double billPatient(Person patient){return fee;}
-    public double billPatient(boolean medicarePatient, GovernmentProgram govProgram){return  fee;}
+    public double billPatient(Person patient){
+        patient.payBill(fee);
+        return fee;
+    }
+    
+    public double billPatient(boolean medicarePatient, GovernmentProgram govProgram) {
+        govProgram.processPaperwork(fee);
+        return fee;
+    }
+
 }
