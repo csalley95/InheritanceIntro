@@ -14,6 +14,17 @@ public class Doctor {
         fee = price;
     }
 
+    @Override
+    public boolean equals(Object other){
+        if (this == other)
+            return true;
+        if (! (other instanceof Doctor))
+            return false;
+        var isSame = this.fee == ((Doctor) other).fee &&
+                this.AlmaMater .equals(((Doctor) other).AlmaMater);
+        return isSame;
+    }
+
     public void treatPatient(Person patient){
         System.out.println("Take two every twelve hours");
         patient.takeMedicine();

@@ -14,10 +14,14 @@ public class Main {
         doc.treatPatient(sickPerson);
         var doc2 = new Surgeon("Western Wyoming School of Mines", 200);
         docList.add(doc2);
+        if (doc.equals(sickPerson))
+            System.out.println("Wow - how did that happen?");
+        else
+            System.out.println("Nope they were not the same");
+        docList.add(doc2);
         for (Doctor onCallDoc: docList){
             onCallDoc.treatPatient(sickPerson);
             onCallDoc.treatPatient(sickerPerson2);
         }
-        //doc2.treatPatient(sickPerson);
         }
     }
