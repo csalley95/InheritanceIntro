@@ -1,6 +1,7 @@
 package com.company;
 
 public abstract class Employee{ //you can switch public and abstract around in class and method
+
     public abstract double calculateBiWeeklyPay();
 
     public void withholdTaxes(){

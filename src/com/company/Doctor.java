@@ -4,11 +4,6 @@ public class Doctor {
     protected String AlmaMater;
     private double fee;
 
-//    public Doctor(){
-//        AlmaMater = "Surgery University";
-//        fee = 100;
-//    }
-
     public Doctor(String university, double price){
         AlmaMater = university;
         fee = price;
